@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Revenue Services Lesotho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+
+<body class="dashboard">  
+    <h1 class="header_container">
+        <div class="logo_container">
+            <img src="logo.png" alt=" " class="logoImg">
+
+            <div class="logo_texts">
+                <span class="revenue_text">Revenue Services</span>
+                <span class="lesotho_text">Lesotho</span>
+            </div>
+        </div>
+
+        <i class="fa fa-user-circle profileIcon" aria-hidden="true"></i>
+    </h1>
+
+    <div class="links_container">
+        <img src="back.jpg" alt=" " class="links_background">
+
+        <div class="links">
+            <span class="first_link">DASHBOARD</span>
+            <span class="link">LEGISLATIONS & POLICIES</span>
+            <span class="link">HELP & RESOURCES</span>
+            <span class="last_link">IMPORTANT DATES</span>
+        </div>
+    </div>
+
+    <div class="content_container">
+        <span class="dashboard_title">Dashboard</span>
+
+        <div class="incomeTax">
+            <span class="incomeTax_title">Income Tax</span>
+            <div class="title_underline"></div>
+
+            <div class="incomeTax_details">
+                <div class="pit">
+                    <span class="pit_percentage">5% </span> 
+                    <span class="pit_title">Withholding Tax (WHT)</span>
+                </div>
+
+                <div class="cit">
+                    <span class="pit_percentage">10% </span> 
+                    <span class="pit_title">Company Income Tax (CIT)</span>
+                </div>
+
+                <div class="pit">
+                    <span class="pit_percentage">20% </span> 
+                    <span class="pit_title">Personal Income Tax (PIT)</span>
+                </div>
+
+                <div class="fbt">
+                    <span class="fbt_title">Fringe Benefit Tax (FBT)</span>
+                    <span class="fbt_percentage">40%</span>
+                </div>
+
+                <div class="vat">
+                    <img src="background.jpg" alt=" " class="vat_background">
+                    
+                    <div class="vat_overlay">
+                        <span class="vat_title">Value Added Tax (VAT)</span>
+
+                        <div class="vat_percentages">
+                            <span class="vat_percentage">10% - Electricity</span>
+                            <span class="vat_percentage">15% - Telecommunications </span>
+                            <span class="vat_percentage">15% - Other goods and services </span>
+                            <span class="vat_percentage">0% - Exports and basic commodities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="revenue_calculations">
+            <div class="revenue_prediction">
+                <span class="prediction_title">Predict tax revenue</span>
+
+                <div id="revenue_form">
+                    <span id="form_title">Choose the revenue category and year to calculate tax revenue</span>
+
+                    <div id="choices">
+                        <div id="categories_container">
+                            <img src="cat.jpg" alt=" " id="categoriesImg">
+    
+                            <select name="caregories" id="caregories">
+                                <option value="Total tax and non-tax revenue">Total tax and non-tax revenue</option>
+                                <option value="Total tax revenue">Total tax revenue</option>
+                                <option value="1000 Taxes on income, profits, and capital gains">1000 Taxes on income, profits, and capital gains</option>
+                                <option value="1100 Taxes on income, profits, and capital gains of individuals">1100 Taxes on income, profits, and capital gains of individuals</option>
+                                <option value="Personal income tax">Personal income tax</option>
+                                <option value="Withholding tax">Withholding tax</option>
+                                <option value="1120 On capital gains of individuals">1120 On capital gains of individuals</option>
+                                <option value="1200 Taxes on income, profits, and capital gains of corporates">1200 Taxes on income, profits, and capital gains of corporates</option>
+                                <option value="1210 On profits of corporates">1210 On profits of corporates</option>
+                                <option value="Corporate income tax">Corporate income tax</option>
+                                <option value="Gambling levy">Gambling levy</option>
+                                <option value="1220 On capital gains of corporates">1220 On capital gains of corporates</option>
+                                <option value="1300 Unallocable between 1100 and 1200">1300 Unallocable between 1100 and 1200</option>
+                                <option value="2000 Social security contribution (SSC)">2000 Social security contribution (SSC)</option>
+                                <option value="3000 Taxes on payroll and workforce">3000 Taxes on payroll and workforce</option>
+                                <option value="5000 Taxes on goods and services">5000 Taxes on goods and services</option>
+                                <option value="5100 Taxes on production, sale, transfer, etc">5100 Taxes on production, sale, transfer, etc</option>
+                                <option value="5110 General taxes on goods and services">5110 General taxes on goods and services</option>
+                                <option value="5111 Value added taxes">5111 Value added taxes</option>
+                                <option value="VAT on imports">VAT on imports</option>
+                                <option value="5112 Sales tax">5112 Sales tax</option>
+                                <option value="5130 Unallocable between 5110 and 5120">5130 Unallocable between 5110 and 5120</option>
+                                <option value="5200 Taxes on use of goods and perform activities">5200 Taxes on use of goods and perform activities</option>
+                                <option value="5300 Unallocable between 5100 and 5200">5300 Unallocable between 5100 and 5200</option>
+                                <option value="6000 Taxes other than 1000, 2000, 3000, 4000, and 5000">6000 Taxes other than 1000, 2000, 3000, 4000, and 5000</option>
+                                <option value="Total tax revenues not including social security contributions">Total tax revenues not including social security contributions</option>
+                                <option value="Total non-tax revenue">Total non-tax revenue</option>
+                                <option value="Non-tax revenue: Grants">Non-tax revenue: Grants</option>
+                                <option value="Water royalties">Water royalties</option>
+                                <option value="Mining and other royalties">Mining and other royalties</option>
+                                <option value="Non-tax revenue: Interest and dividends">Non-tax revenue: Interest and dividends</option>
+                                <option value="SACU revenue">SACU revenue</option>
+                                <option value="Total non-tax revenue excluding grants">Total non-tax revenue excluding grants</option>
+                                <option value="Total tax and non-tax revenue excluding grants">Total tax and non-tax revenue excluding grants</option>
+                                <option value="Excise taxes collected on behalf of the SACU Common Revenue Pool">Excise taxes collected on behalf of the SACU Common Revenue Pool</option>
+                                <option value="Import duties collected on behalf of the SACU Common Revenue Pool">Import duties collected on behalf of the SACU Common Revenue Pool</option>
+                                <option value="VAT - Domestic (Gross)">VAT - Domestic (Gross)</option>
+                            </select>
+                        </div>
+    
+                        <div id="categories_contain">
+                            <img src="cal.jpg" alt=" " id="categoriesImage">
+    
+                            <select name="years" id="years">
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="btn_containver">
+                        <button id="formBtn">Predict revenue</button>
+                    </div>
+
+                    <div id="revenue_value">
+                        <span id="revenue_title">Revenue value</span>
+                       <div id="value_input"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat_container">
+                <span class="chat_title">Tax revenue as of the year 2021</span>
+
+                <div class="chat_details">
+                    <canvas id="myPieChart" width="90vh", height="54vh"></canvas>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>  
+</body>
+</html>
