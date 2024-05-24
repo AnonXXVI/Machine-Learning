@@ -12,8 +12,17 @@ document.getElementById('formBtn').addEventListener('click', async () => {
    });
 
    const result = await response.json();
+
+   if (result.prediction) {
+    const formattedPrediction = new Intl.NumberFormat('en-LS', {
+        style: 'currency',
+        currency: 'LSL'
+    }).format(parseFloat(result.prediction));
     
-    document.getElementById('value_input').innerText = `${result.prediction}`;
+    document.getElementById('value_input').innerText = formattedPrediction;
+} else {
+    document.getElementById('value_input').innerText = 'Prediction not available';
+}
     
 });
 
